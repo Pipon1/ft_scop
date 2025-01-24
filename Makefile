@@ -6,7 +6,7 @@ OBJ_DIR := obj/
 INC_DIR := include/
 INCLUDE_DIR := /usr/include
 LIB_DIR := /usr/lib
-SRC_FILES := main glad
+SRC_FILES := main glad image_loader
 SRC := $(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC_FILES)))
 OBJ := $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
 CC := g++ -g -fsanitize=address
